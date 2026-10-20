@@ -1,0 +1,42 @@
+# Dependencies
+node_modules/
+
+# Expo
+.expo/
+dist/
+dist-*/
+web-build/
+expo-env.d.ts
+
+# Logs
+*.log
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+google-services.json
+GoogleService-Info.plist
+
+# Native build artifacts and signing files
+*.apk
+*.aab
+*.ipa
+*.jks
+*.keystore
+*.p8
+*.p12
+*.key
+*.mobileprovision
+eas-build-pre-install.sh
+
+# Test and coverage output
+coverage/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
