@@ -128,7 +128,7 @@ flowchart LR
 - **Reproducible setup** — `.nvmrc`, `package-lock.json`, and `npm ci`.
 - **CI** — GitHub Actions runs lint, TypeScript, and an Android JavaScript bundle on every push and pull request.
 - **Native delivery** — EAS Build profiles in `eas.json` produce an installable Android APK with `preview` and an incrementing production build with `production`.
-- **Dependency upkeep** — Dependabot groups Expo updates and checks GitHub Actions monthly.
+- **Dependency upkeep** — Dependabot keeps GitHub Actions current; Expo SDK packages are aligned with `npx expo install --fix`.
 
 There is intentionally no backend, database, authentication service, or cloud sync. “Cloud” here is limited to the build pipeline; the product itself is device-local.
 

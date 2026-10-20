@@ -1,16 +1,7 @@
 version: 2
 updates:
-  - package-ecosystem: npm
-    directory: /
-    schedule:
-      interval: weekly
-    open-pull-requests-limit: 5
-    groups:
-      expo:
-        patterns:
-          - "expo*"
-          - "@expo/*"
-
+  # Expo packages are versioned as a set and must be aligned with
+  # `npx expo install --fix`, so Dependabot only maintains GitHub Actions.
   - package-ecosystem: github-actions
     directory: /
     schedule:
